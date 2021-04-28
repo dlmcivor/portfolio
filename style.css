@@ -30,14 +30,6 @@ body {
     margin: 0 auto;
 }
 
-/* .about,
-.featAll,
-.eduAll,
-.contactAll,
-.footContent {
-    background-color: #111111;
-} */
-
 h1,
 h2,
 h3,
@@ -85,7 +77,7 @@ li {
 
 .introHeader {
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
 }
 
 .headerFixed {
@@ -118,6 +110,13 @@ li {
     width: 100%;
 }
 
+.barToggle {
+    visibility: hidden;
+    font-size: 30px;
+    position: relative;
+    right: 30px;
+}
+
 .menuItems {
     display: flex;
     flex-direction: row;
@@ -132,15 +131,119 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 70vh;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.introText h5,
+.introText h4 {
+    font-weight: 600;
 }
 
 /* about */
 
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.imageContainer {
+    width: 300px;
+    height: 520px;
+}
+
+.aboutImg {
+    background: url(./assets/dot-light.png);
+    background-size: 15px;
+    background-repeat: repeat;
+    width: 300px;
+    height: 200px;
+    margin: 100px 0;
+    position: relative;
+}
+
+.aboutImgTop {
+    width: 200px;
+    position: absolute;
+    top: 280px;
+    left: 50px;
+    z-index: 3;
+}
+
+.aboutImgBottom {
+    width: 340px;
+    position: absolute;
+    top: 80px;
+    left: -20px;
+}
+
+.infoContainer {
+    margin: 100px 10px 100px 30px;
+    padding: 0 10px;
+    width: 60%;
+}
+
+.aboutInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.aboutInfo h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.zigzag {
+    width: 70px;
+    padding: 20px 10px;
+}
+
+.aboutInfo p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 0 10px;
+}
+
+.aboutInfo p span {
+    font-weight: 600;
+}
+
 /* skills */
 
+.skillsAll,
+.featAll,
+.eduAll,
+.interests {
+    margin-top: 100px;
+}
+
+.skillsAll,
+.interests {
+    background-color: #030303;
+}
+
+.skillsTitle,
+.fpTitle,
+.eduTitle,
+.interestTitle,
+.interestContainer {
+    text-align: center;
+}
+
 .sectionTitle {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
     margin-bottom: 130px;
 	text-transform: capitalize;
@@ -172,21 +275,139 @@ li {
     left: calc(50% + 6px);
 }
 
+.skillsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.technicalSkills,
+.otherSkills {
+    border: 1px solid #222222;
+    margin: 10px;
+    width: 520px;
+    height: auto;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 0 20px;
+    position: relative;
+}
+
+h3::after {
+	position: absolute;
+	content: "";
+	height: 7px;
+	width: 7px;
+	top: 16px;
+	left: 5px;
+	background: #007bff;
+}
+
 /* feature projects */
+
+.fpTitle,
+.eduTitle {
+    padding-top: 75px;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 75px;
+}
+
+.projectBox,
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectBox {
+    justify-content: flex-start;
+    border: 1px solid #222222;
+    margin: 10px;
+    width: 260px;
+    height: 500px;
+}
+
+.imgProject {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+
+.projectInfo {
+    justify-content: center;
+}
+
+.projectInfo h6 {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.projectInfo p,
+.fpLinks a {
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    padding: 5px;
+}
+
+.projectInfo p {
+    height: 150px;
+}
+
+.fpLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.fpLinks a {
+    padding: 0 10px;
+}
 
 /* education */
 
-/* outside of coding */
-
-.interests {
-    background-color: #030303;
-    margin-top: 100px;
+.eduContainer {
+    padding-bottom: 75px;
 }
 
-.interestTitle,
-.interestContainer {
+.eduBox {
+    border: 1px solid #222222;
     text-align: center;
+    margin: 20px 0;
+    padding: 15px 5px;
 }
+
+.eduBox h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 5px 0;
+}
+
+.eduBox p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+
+/* outside of coding */
 
 .interestContainer img {
     width: 300px;
@@ -288,9 +509,27 @@ footer {
     color: #666666;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 1.4rem;
 }
 
 .footContent p span {
     color: #ffffff;
+}
+
+/* media queries */
+
+@media (max-width: 1197px) {
+    .infoContainer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1010px) {
+    .barToggle {
+        visibility: visible;
+    }
+
+    .menuItems {
+        display: none;
+    }
 }
