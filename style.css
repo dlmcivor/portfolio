@@ -137,10 +137,143 @@ li {
 
 /* about */
 
+/* skills */
+
+.sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 130px;
+	text-transform: capitalize;
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+	letter-spacing: 1px;
+	line-height: 0.8;
+}
+
+.sectionTitle::before,
+.sectionTitle::after {
+	position: absolute;
+	content: "";
+	height: 50px;
+	width: 2px;
+	background: rgb(0,123,255);
+	background: linear-gradient(180deg, rgba(0,123,255,1) 0%, rgba(0,123,255,0.05644255993412994) 100%);
+	left: 50%;
+	margin-left: -6px;
+	z-index: -1;
+	top: calc(100% + 25px);
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+.sectionTitle::before {
+    height: 35px;
+    left: calc(50% + 6px);
+}
+
+/* feature projects */
+
+/* education */
+
+/* outside of coding */
+
+.interests {
+    background-color: #030303;
+    margin-top: 100px;
+}
+
+.interestTitle,
+.interestContainer {
+    text-align: center;
+}
+
+.interestContainer img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+/* contact */
+
+.contactAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.contactItem h5 {
+	margin-bottom: 3px;
+	text-transform: capitalize;
+	padding-left: 15px;
+	position: relative;
+	font-size: 1rem;
+    font-weight: 400;
+}
+
+.contactItem h5::after {
+	position: absolute;
+	content: "";
+	height: 7px;
+	width: 7px;
+	bottom: 18px;
+	left: 0;
+	background: #007bff;
+}
+
+.contactItem {
+    padding: 10px 20px;
+}
+
+.contactItem p {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.contactLinks {
+    width: 150px;
+    padding: 50px 0px 75px;
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialLinks li i {
+    font-size: 1.5rem;
+}
+
 /* footer */
 
 footer {
-    margin-top: 50px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.goToTop {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.goToTop:hover,
+.goToTop:active {
+    transform: translateY(-0.5rem);
+    color: #ffffff;
+}
+
+.goToTop i {
+    font-size: 3rem;
+    background-color: #007bff;
+    padding: 10px;
 }
 
 .footContent {
@@ -148,7 +281,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 75px 0;
+    padding: 40px 0 75px;
 }
 
 .footContent p {

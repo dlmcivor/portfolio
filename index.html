@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc4ce53cd6.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <section class="introHeader">
@@ -40,7 +42,7 @@
                 </div>
             </div>
         </header>
-        <div class="intro">
+        <div class="intro" id="top">
             <div class="inrtoContainer">
                 <div class="introText">
                     <h5>Hi There, I'm</h5>
@@ -53,7 +55,7 @@
     <section>
         <div class="wrapper1">
             <div class="wrapper2">
-                <div class="about">
+                <div class="about" id="about">
                     <div class="imageContainer">
                         <div class="aboutImg">
                             <img class="aboutImgTop" src="./assets/dana.jpg" alt="Dana McIvor">
@@ -74,7 +76,7 @@
     <section>
         <div class="wrapper1">
             <div class="wrapper2">
-                <div class="skillsTitle">
+                <div class="skillsTitle" id="skills">
                     <h2 class="sectionTitle">Skills</h2>
                 </div>
                 <div class="skillsContainer">
@@ -109,7 +111,7 @@
     <section>
         <div class="wrapper1">
             <div class="wrapper2">
-                <div class="featAll">
+                <div class="featAll" id="featuredProjects">
                     <div class="fpTitle">
                         <h2 class="sectionTitle">Featured Projects</h2>
                     </div>
@@ -146,7 +148,7 @@
     <section>
         <div class="wrapper1">
             <div class="wrapper2">
-                <div class="eduAll">
+                <div class="eduAll" id="education">
                     <div class="eduTitle">
                         <h2 class="sectionTitle">Education</h2>
                     </div>
@@ -174,23 +176,29 @@
                     </div>
                 </div>
             </div>
-            <div class="interestTitle">
-                <h2 class="sectionTitle">My Life Outside of Coding...</h2>
-            </div>
-            <div class="interestContainer">
-                <img src="./assets/circeCrop.jpeg" alt="a dog standing on the edge of an empty waterfeature">
-                <img src="./assets/sheHulk.jpg" alt="Dana cosplaying as She-Hulk, compared with a comicbook cover">
-                <img src="./assets/centralParkFountain.jpeg" alt="statue at the fountain in Central Park">
-                <img src="./assets/velodrome.jpg" alt="the Velodrome in Marseille during a soccer match">
-                <img src="./assets/veniceBeach.jpeg" alt="sunset at Venice Beach">
-                <img src="./assets/mask.jpeg" alt="Dana wearing a gold mask">
+        </div>
+    </section>
+    <section>
+        <div class="wrapper1">
+            <div class="interests">
+                <div class="interestTitle">
+                    <h2 class="sectionTitle">Outside of Coding...</h2>
+                </div>
+                <div class="interestContainer">
+                    <img src="./assets/circeCrop.jpeg" alt="a dog standing on the edge of an empty waterfeature">
+                    <img src="./assets/sheHulk.jpg" alt="Dana cosplaying as She-Hulk, compared with a comicbook cover">
+                    <img src="./assets/centralParkFountain.jpeg" alt="statue at the fountain in Central Park">
+                    <img src="./assets/velodrome.jpg" alt="the Velodrome in Marseille during a soccer match">
+                    <img src="./assets/veniceBeach.jpeg" alt="sunset at Venice Beach">
+                    <img src="./assets/mask.jpeg" alt="Dana wearing a gold mask">
+                </div>
             </div>
         </div>
     </section>
     <section>
         <div class="wrapper1">
             <div class="wrapper2">
-                <div class="contactAll">
+                <div class="contactAll" id="contact">
                     <div class="contactTitle">
                         <h2 class="sectionTitle">Get In Touch</h2>
                     </div>
@@ -203,10 +211,12 @@
                             <h5>Email</h5>
                             <p>dlmcivor80@gmail.com</p>
                         </div>
+                    </div>
+                    <div class="contactLinks">
                         <ul class="socialLinks">
-                            <li><a href="https://twitter.com/mcivor_dana"><span class="ion-social-twitter"></span></a></li>
-                            <li><a href="https://www.linkedin.com/in/danamcivor/"><span class="ion-social-linkedin"></span></a></li>
-                            <li><a href=""><span class="github"></span></a></li>
+                            <li><a href="https://twitter.com/mcivor_dana"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/danamcivor/"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/dlmcivor"><i class="fab fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -217,7 +227,7 @@
         <footer>
             <div class="wrapper1">
                 <a href="#top" class="goToTop">
-                    <i class="ion-ios-arrow-thin-up"></i>
+                    <i class="fas fa-long-arrow-alt-up"></i>
                 </a>
                 <div class="footContent">
                     <p><span>Dana McIvor, 2021</span></p>
