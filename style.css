@@ -78,6 +78,7 @@ li {
 .introHeader {
     width: 100vw;
     height: 70vh;
+    background-image: url(./assets/what-the-hex-dark.png);
 }
 
 .headerFixed {
@@ -161,12 +162,21 @@ li {
 }
 
 h1 {
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 .introText h5,
 .introText h4 {
     font-weight: 600;
+}
+
+.introText h5 {
+    font-size: 1.1rem;
+}
+
+.introText h4 {
+    font-size: 1.3rem;
 }
 
 /* about */
@@ -563,5 +573,29 @@ footer {
 
     .menuItems {
         display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .aboutInfo p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .introText h1 {
+        font-size: 1.8rem;
+    }
+
+    .introText h4 {
+        font-size: 1rem;
+    }
+
+    .introText h5 {
+        font-size: 0.9rem;
+    }
+
+    .footContent p {
+        font-size: 0.7rem;
     }
 }
