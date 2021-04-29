@@ -117,6 +117,15 @@ li {
     right: 0;
 }
 
+.toggleItem {
+    height: 40px;
+}
+
+.toggleItem a {
+    font-size: 1rem;
+    line-height: 40px;
+}
+
 .barToggle {
     visibility: hidden;
     font-size: 30px;
@@ -279,7 +288,7 @@ h1 {
 .fpTitle,
 .eduTitle,
 .contactTitle {
-    padding-top: 75px;
+    padding-top: 80px;
 }
 
 .sectionTitle {
@@ -366,7 +375,7 @@ h3::after {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    padding-bottom: 75px;
+    padding-bottom: 80px;
 }
 
 .projectBox,
@@ -426,7 +435,7 @@ h3::after {
 /* education */
 
 .eduContainer {
-    padding-bottom: 75px;
+    padding-bottom: 80px;
 }
 
 .eduBox {
@@ -561,6 +570,7 @@ footer {
 
 @media (max-width: 1197px) {
     .infoContainer {
+        margin: 100px 0px 100px 10px;
         width: 100%;
     }
 }
